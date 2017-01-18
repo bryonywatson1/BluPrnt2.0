@@ -1,0 +1,31 @@
+body {
+  background-color: #ddd;
+}
+
+#class-cell {
+  width: 15em;
+}
+
+#method-cell {
+  width: 15em;
+}
+
+#add-responsibility {
+  background-color: #93ea9c;
+  color: white;
+}
+
+#add-class {
+  background-color: #a36ee4;
+  color: white;
+
+}
+
+#class {
+}
+
+
+
+.clearBoth {
+  clear:both;
+}
