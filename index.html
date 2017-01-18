@@ -22,7 +22,10 @@
         <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
         <link href="./lib/css/index.css" rel="stylesheet">
 
-        <script src="jquery.js"></script>
+        <script src="./jquery.js"></script>
+        <script src="./SqDiagram.js"></script>
+        <script src="./interface.js"></script>
+
     </head>
 
 
@@ -33,15 +36,17 @@
 
 
 
-        <pre id="txt">
-            customer->website:woop
-        </pre>
-
-
-
         <div id="diagram"></div>
 
-
+        <div>
+<form id='select-name'>
+<label for="current-name">Choose a word:</label>
+<input type="text" id="current-name" value='Demo'/>
+  <p>
+<input type="submit" value="Submit"/>
+</p>
+</form>
+</div>
 
 
         <script>
@@ -50,7 +55,7 @@
         </script>
 
 
-        <form action="">
+         <form action="">
 
             <span id='class-wrapper' >
                 <span id="class">
@@ -66,13 +71,9 @@
                 </span>
             </span><br/>
 
-
             <input type="button" class="btn btn-default btn-lg" value="add another line" id="add-responsibility">
-            <!-- <input type="button" class="btn btn-default btn-lg" value="add another class" id="add-class"> -->
+            <input type="button" class="btn btn-default btn-lg" value="add another class" id="add-class">
         </form>
-
-
-
 
     </body>
 </html>
