@@ -32,12 +32,8 @@
     <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="./lib/js/bootstrap.min.js"></script>
+        <script src="./lib/getInfo.js"></script>
 
-
-        <!-- <pre id="txt">
-            customer->web:method2
-
-        </pre> -->
 
 
         <div id="diagram"></div>
@@ -53,30 +49,31 @@
 </div>
 
 
-        <!-- <script>
+        <script>
               var diagram = Diagram.parse(document.getElementById('txt').innerText)
               diagram.drawSVG('diagram',{theme:'simple'});
-        </script> -->
+        </script>
 
 
-        <!-- <form action="">
+         <form action="">
 
-            <div id=class-wrapper>
-                <div id="class">
-                    <input type="text" name="class-input" id="class-cell">
-                </div>
+            <span id='class-wrapper' >
+                <span id="class">
+                    <label for="class-input">Class: </label>
+                    <input type="text" name="class-input" class="class-class" id="class-cell">
+                </span>
 
-                <div id="items">
-                    <input type="text" name="method-input" id="method-cell"><input type="text" name="collaborators" id="method-cell">
-                </div>
-            </div><br/>
+                <span id="items">
+                    <label for="method-input">Responsibility</label>
+                    <input type="text" name="method-input" class="method-class" id="method-cell">
+                    <label for="collaborators">Collaborator</label>
+                    <input type="text" name="collaborators" class="collaborator-class" id="method-cell">
+                </span>
+            </span><br/>
 
-            <input type="button" class="btn btn-default btn-lg" value="add another responsibility" id="add-responsibility">
+            <input type="button" class="btn btn-default btn-lg" value="add another line" id="add-responsibility">
             <input type="button" class="btn btn-default btn-lg" value="add another class" id="add-class">
-        </form> -->
-
-
-
+        </form>
 
     </body>
 </html>

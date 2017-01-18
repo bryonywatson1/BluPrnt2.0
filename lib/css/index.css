@@ -3,7 +3,7 @@ body {
 }
 
 #class-cell {
-  width: 30em;
+  width: 15em;
 }
 
 #method-cell {
@@ -19,4 +19,13 @@ body {
   background-color: #a36ee4;
   color: white;
 
+}
+
+#class {
+}
+
+
+
+.clearBoth {
+  clear:both;
 }
