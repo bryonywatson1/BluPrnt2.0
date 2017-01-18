@@ -20,3 +20,11 @@ body {
   color: white;
 
 }
+
+#class {
+   float:left
+}
+
+.clearBoth {
+  clear:both;
+}
