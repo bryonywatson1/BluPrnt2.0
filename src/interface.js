@@ -1,24 +1,26 @@
 $( document ).ready(function() {
   var diagram = new Diagram();
-  displayNewShape('London')
 
 
 
-  function drawThis(){
-    return diagram.drawSomething();
+  function drawThis(name){
+    var diagram = Diagram.parse(name.innerText)
+    diagram.drawSVG('diagram', {theme:'simple'})
   }
+
+
 
 
   $('#select-name').submit(function (event) {
     event.preventDefault();
-    var name = $('#current-name').val();
-    displayNewShape(name);
+    var name = 'participant' + $('#current-name').val();
+    drawThis(name);
   })
 
 
   function displayNewShape(name) {
     var output = drawThis() + name + ";"
-      $('.mermaid').text(output);
+      $('.insert').text(output);
   }
 
 });

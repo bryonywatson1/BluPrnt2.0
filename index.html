@@ -1,9 +1,14 @@
 <head>
   <script src="jquery.js"></script>
-  <script src="https://cdn.rawgit.com/knsv/mermaid/6.0.0/dist/mermaid.min.js"></script>
+  <!-- <script src="https://cdn.rawgit.com/knsv/mermaid/6.0.0/dist/mermaid.min.js">loadScript("http://your.cdn.com/second.js", function(){
+    //initialization code
+});</script>
 <link rel="stylesheet" href="https://cdn.rawgit.com/knsv/mermaid/6.0.0/dist/mermaid.css">
-<script>mermaid.initialize({startOnLoad:true});</script>
-
+<script>mermaid.initialize({startOnLoad:false,cloneCssStyles:false});</script> -->
+<script src="https://bramp.github.io/js-sequence-diagrams/js/webfont.js"></script>
+<script src="https://bramp.github.io/js-sequence-diagrams/js/snap.svg-min.js"></script>
+<script src="https://bramp.github.io/js-sequence-diagrams/js/underscore-min.js"></script>
+<script src="https://bramp.github.io/js-sequence-diagrams/js/sequence-diagram-min.js"></script>
 
   <script src="src/interface.js"></script>
   <script src='src/Diagram.js'></script>
@@ -20,11 +25,14 @@
   </p>
   </form>
 </div>
-  <div>
- <div class="mermaid">
-
- </div>
-
+<pre id='txt'>
+participant class
+</pre>
+<div class="diagram">A->B: Message</div>
+<script>
+var diagram = Diagram.parse(document.getElementById('txt').innerText)
+diagram.drawSVG('diagram', {theme:'hand'})
+</script>
 
 
 </body>
