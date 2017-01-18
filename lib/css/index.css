@@ -3,7 +3,7 @@ body {
 }
 
 #class-cell {
-  width: 30em;
+  width: 15em;
 }
 
 #method-cell {
@@ -22,8 +22,9 @@ body {
 }
 
 #class {
-   float:left
 }
+
+
 
 .clearBoth {
   clear:both;
