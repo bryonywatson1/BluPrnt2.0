@@ -48,3 +48,10 @@ body {
   border: 0.5px solid;
   border-radius: 25px;
 }
+
+
+
+ #title {
+   position: absolute;
+    left: 0;
+ }
