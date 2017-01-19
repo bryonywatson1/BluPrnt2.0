@@ -25,7 +25,7 @@ body {
 }
 
 #class-wrapper {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Indie Flower';
   	font-size: 18px;
   	font-style: normal;
   	font-variant: normal;
@@ -54,4 +54,5 @@ body {
  #title {
    position: absolute;
     left: 0;
+    font-family: 'Indie Flower';font-size: 22px;
  }
