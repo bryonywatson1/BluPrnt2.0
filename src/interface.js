@@ -7,7 +7,6 @@ $( document ).ready(function() {
   event.preventDefault();
   $('#diagram').html('')
   var name = updateDiagram();
-  console.log(1);
   sqDiagram.drawSomething(name);
 })
 
