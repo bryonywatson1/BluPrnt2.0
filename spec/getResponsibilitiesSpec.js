@@ -2,21 +2,29 @@
 
 describe("getResponsibilities", function(){
 
- beforeEach(function() {
+ // beforeEach(function() {
+ //
+ //   $("<a href='/Users/rory/Documents/Makers/week9/BluPrnt2.0/index.html'></a>").click();
+ //   for(var i=0; i< 3; i++) {
+ //   $('.class-class').val('you');
+ //   $('.collaborator-class').val('you');
+ //   $('.method-class').val('you');
+ //   }
+ //
+ // })
+
+  it("should use jquery and work this time", function(){
+    jasmine.getFixtures().fixturesPath = './';
+    loadFixtures('index.html')
+
+  expect($('.method-class')).toBeInDOM()
+  })
+ //
+ //  it("Should store 1 elements when a user fills in 1 responsibility", function(){
+ //    $("<a href='/Users/rory/Documents/Makers/week9/BluPrnt2.0/index.html'></a>").click();
+ //    $('.method-class').val('you');
+ //  expect(getResponsibilities().length).toEqual(1)
+ // })
 
 
-   for(var i=0; i< 3; i++) {
-   $('.class-class').val('you');
-   $('.collaborator-class').val('you');
-   $('.method-class').val('you');
-   }
-
- })
-
-it("Should store 3 elements when a user fills in 3 responsibilities", function(){
- visit("file:///Users/DarkChocLatte/Google%20Drive/Projects/BluPrnt2.0/index.html")
- fill_in('class-cell').with('123')
-
- expect(getResponsibilities().length === 3)
-})
 })
