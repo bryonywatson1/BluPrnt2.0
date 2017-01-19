@@ -1,10 +1,57 @@
 body
 {
- background-color:#269;
- background-image: linear-gradient(white 2px, transparent 2px),
+ background-color:#ADD8E6;
+ background-image: linear-gradient(white 1px, transparent 1px),
    linear-gradient(90deg, white 2px, transparent 2px),
    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+
 }
+
+body {
+  postion: relative;
+  margin: auto;
+  width: 800px;
+
+}
+
+
+#add-responsibility {
+ height: 30px;
+ width: 30px;
+ border-radius: 50%;
+}
+
+#class-wrapper {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-size: 18px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 500;
+  	line-height: 26.4px;
+
+}
+
+.class-class {
+  border: 0.5px solid;
+  border-radius: 25px;
+}
+
+.method-class {
+  border: 0.5px solid;
+  border-radius: 25px;
+}
+
+.collaborator-class {
+  border: 0.5px solid;
+  border-radius: 25px;
+}
+
+
+
+ #title {
+   position: absolute;
+    left: 0;
+ }

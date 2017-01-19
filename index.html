@@ -29,45 +29,45 @@
 
 
 
-    <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="./lib/getClasses.js"></script>
-        <script src="./lib/getResponsibilities.js"></script>
-        <script src="./lib/getCollaborators.js"></script>
-        <script src="./lib/updateDiagram.js"></script>
-
-
-
-  <div id="diagram"></div>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./lib/getClasses.js"></script>
+    <script src="./lib/getResponsibilities.js"></script>
+    <script src="./lib/getCollaborators.js"></script>
+    <script src="./lib/updateDiagram.js"></script>
 
 
 
 
 
-  <script>
-  var diagram = Diagram.parse(document.getElementById('txt').innerText)
-  diagram.drawSVG('diagram',{theme:'simple'});
-  </script>
+    <div id='title'>
+    <h1>BLUPRNT 2.0</h1>
+    </div>
 
 
-  <form action="">
+    <script>
+    var diagram = Diagram.parse(document.getElementById('txt').innerText)
+    diagram.drawSVG('diagram', {theme:'simple'});
+    </script>
 
-    <span id='class-wrapper' >
-      <span id="class">
+<div id="diagram"></div>
+
+    <form action="">
+
+      <span id='class-wrapper' >
         <label for="class-input">Class: </label>
         <input type="text" name="class-input" class="class-class" id="class-cell">
-      </span>
 
-      <span id="items">
-        <label for="method-input">Responsibility</label>
+        <label for="method-input">Responsibility:</label>
         <input type="text" name="method-input" class="method-class" id="method-cell">
-        <label for="collaborators">Collaborator</label>
+        <label for="collaborators">Collaborator:</label>
         <input type="text" name="collaborators" class="collaborator-class" id="method-cell">
-      </span>
-    </span><br/>
+          <input type="button" class="btn btn-default btn-lg" value="+" id="add-responsibility" >
+      </span><br/>
 
-    <input type="button" class="btn btn-default btn-lg" value="add another line" id="add-responsibility">
-  </form>
 
-</body>
-</html>
+    </form>
+
+
+  </body>
+  </html>
