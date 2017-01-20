@@ -56,3 +56,9 @@ body {
     left: 0;
     font-family: 'Indie Flower';font-size: 22px;
  }
+
+ #delete {
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+ }
