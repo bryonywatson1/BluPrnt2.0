@@ -22,6 +22,13 @@ describe("getResponsibilities", function(){
   it("Should store 1 elements when a user fills in 1 responsibility", function(){
     jasmine.getFixtures().fixturesPath = './';
     loadFixtures('index.html')
+    $('.method-class').val('yousuck');
+  expect(getResponsibilities().length).toEqual(1)
+  })
+
+  it("Should store 3 elements when a user fills in 3 responsibility", function(){
+    jasmine.getFixtures().fixturesPath = './';
+    loadFixtures('index.html')
     $('#add-responsibility').click();
     $('#add-responsibility').click();
     $('.method-class').val('yousuck');
