@@ -46,15 +46,23 @@
     <h1>BLUPRNT 2.0</h1>
     </div>
 
+    <div id='instructions'>
+    <h3>Using the Class,Responsibility,Collaborator model, fill out the fields below to see your code in sequence diagram form!
+Class describes the object doing the action, Responsibility describes the method or task you want that object to do, and Collaborator describes the object (or other class) that is affected by that method.
+As you add more lines to show the interactions between your classes and collaborators, the diagram will grow! </h3>
+    </div>
+
 
     <script>
     var diagram = Diagram.parse(document.getElementById('txt').innerText)
     diagram.drawSVG('diagram', {theme:'simple'});
     </script>
 
+  <span>
+
 <div id="diagram"></div>
 
-    <form action="">
+    <form action="" id="crc-form">
 
       <span id='class-wrapper' >
         <label for="class-input">Class: </label>
@@ -69,7 +77,7 @@
 
 
     </form>
-
+</span>
 
   </body>
   </html>
