@@ -18,11 +18,6 @@ body {
 }
 
 
-#add-responsibility {
- height: 30px;
- width: 30px;
- border-radius: 50%;
-}
 
 #class-wrapper {
   font-family: 'Indie Flower';
@@ -55,4 +50,23 @@ body {
    position: absolute;
     left: 0;
     font-family: 'Indie Flower';font-size: 22px;
+ }
+
+ #add-responsibility {
+   height: 3em;
+   width: 3em;
+   border-radius: 50%;
+   background-color: green;
+   color: white;
+   border: none;
+ }
+
+ #delete {
+   height: 3em;
+   width: 3em;
+   border-radius: 50%;
+   background-color:red;
+   color: white;
+   border: none;
+
  }
