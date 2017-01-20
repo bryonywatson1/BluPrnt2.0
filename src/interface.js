@@ -10,7 +10,13 @@ $( document ).ready(function() {
   sqDiagram.drawSomething(name);
 })
 
-
+$('body').on('click','#delete', function (e){
+  var sqDiagram = new SqDiagram();
+  $(this).parent('#items').remove();
+  $('#diagram').html('')
+  var name = updateDiagram();
+  sqDiagram.drawSomething(name);
+});
 
 
 });
